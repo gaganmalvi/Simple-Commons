@@ -449,7 +449,7 @@ open class BaseConfig(val context: Context) {
         set(lastBlockedNumbersExportPath) = prefs.edit().putString(LAST_BLOCKED_NUMBERS_EXPORT_PATH, lastBlockedNumbersExportPath).apply()
 
     var blockUnknownNumbers: Boolean
-        get() = prefs.getBoolean(BLOCK_UNKNOWN_NUMBERS, false)
+        get() = prefs.getBoolean(BLOCK_UNKNOWN_NUMBERS, true)
         set(blockUnknownNumbers) = prefs.edit().putBoolean(BLOCK_UNKNOWN_NUMBERS, blockUnknownNumbers).apply()
 
     var fontSize: Int
