@@ -66,6 +66,11 @@
     <string name="disclaimer">Vastutusnõue</string>
     <string name="take_photo">Pildista</string>
     <string name="choose_photo">Vali pilt</string>
+    <string name="choose_video">Vali video</string>
+    <string name="choose_contact">Vali kontakt</string>
+    <string name="choose_file">Vali fail</string>
+    <string name="record_audio">Salvesta heli</string>
+    <string name="record_video">Salvesta video</string>
     <!-- Events -->
     <string name="birthday">Sünnipäev</string>
     <string name="anniversary">Aastapäev</string>
@@ -92,6 +97,10 @@
     <string name="landscape_column_count">Maastikuline veergude arv</string>
     <string name="change_cover_image">Muuda kaanepilti</string>
     <string name="select_photo">Vali foto</string>
+    <plurals name="column_counts">
+        <item quantity="one">%d veerg</item>
+        <item quantity="other">%d veergu</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">Halda blokeeritud telefoninumbreid</string>
     <string name="not_blocking_anyone">Sa pole veel ühtegi telefoninumbrit blokeerinud.</string>
@@ -107,6 +116,7 @@
     <string name="block_unknown_calls">Blokeeri kõned, kui helistaja pole aadressiraamatus</string>
     <string name="block_unknown_messages">Blokeeri sõnumid, kui saatja pole aadressiraamatus</string>
     <string name="add_blocked_number_helper_text">Sisestage number või muster (nt *12345*, +1*8888), et blokeerida kõik kõned ja sõnumid mustrile vastavatelt numbritelt.</string>
+    <string name="must_make_default_caller_id_app">Ilma helistajanäidu tuvastamise loata ei ole võimalik võõraid helistajaid blokeerida.</string>
     <!-- Favorites -->
     <string name="favorites">Lemmikud</string>
     <string name="add_favorites">Lisa lemmikuks</string>
@@ -115,6 +125,23 @@
     <!-- Search -->
     <string name="search">Otsi</string>
     <string name="type_2_characters">Otsingu alustamiseks kirjuta vähemalt 2 tähemärki.</string>
+    <string name="search_contacts">Otsi kontaktide hulgast</string>
+    <string name="search_favorites">Otsi lemmikute hulgast</string>
+    <string name="search_apps">Otsi rakendusi</string>
+    <string name="search_events">Otsi sündmusi</string>
+    <string name="search_groups">Otsi rühmi</string>
+    <string name="search_history">Otsi ajaloost</string>
+    <string name="search_calls">Otsi seniste kõnede seast</string>
+    <string name="search_files">Otsi faile</string>
+    <string name="search_folders">Otsi kaustu</string>
+    <string name="search_files_and_folders">Otsi faile ja kaustu</string>
+    <string name="search_playlists">Otsi esitusloendeid</string>
+    <string name="search_artists">Otsi esitajate seast</string>
+    <string name="search_albums">Otsi albumite seast</string>
+    <string name="search_tracks">Otsi lugusid</string>
+    <string name="search_text">Otsi teksti</string>
+    <string name="search_conversations">Otsi vestluste seast</string>
+    <string name="search_recordings">Otsi salvestuste seast</string>
     <!-- Filters -->
     <string name="filter">Filtreeri</string>
     <string name="filter_pro">Sirvi (Pro)</string>
@@ -126,6 +153,7 @@
     <string name="no_camera_permissions">Vajalik on õigus kasutada kaamerat</string>
     <string name="no_audio_permissions">Vajalik on õigus kasutada helisüsteemi</string>
     <string name="no_post_notifications_permissions">Teatiste postitamiseks on vaja luba</string>
+    <string name="no_permission">Õigused puuduvad</string>
     <!-- Renaming -->
     <string name="rename_file">Muuda faili nime</string>
     <string name="rename_folder">Muuda kausta nime</string>
@@ -293,6 +321,7 @@
     <string name="discard">Loobu</string>
     <string name="undo_changes">Tühista muudatused</string>
     <string name="undo_changes_confirmation">Kas oled kindel, et soovid oma muudatusi tühistada\?</string>
+    <string name="cannot_be_undone">Seda tegevust ei saa tagasi pöörata.</string>
     <string name="save_before_closing">Sul on salvestamata muudatusi. Kas salvestame enne väljumist\?</string>
     <string name="apply_to_all_apps">Kasuta samu värvi kõikides Lihtsate tarvikute rakendsustes</string>
     <string name="app_icon_color_warning">HOIATUS: Mõned käivitajad ei käsitse rakenduste ikoonide kohandamist korralikult. Kui ikoon kaob, proovige käivitada rakendus Google Play või mõne vidina kaudu, kui see on saadaval. Kui olete käivitanud rakenduse, seadistage lihtsalt vaikimisi oranž ikoon #F57C00 tagasi. Halvemal juhul peate rakenduse võib-olla uuesti installima.</string>
@@ -362,7 +391,7 @@
     <string name="date_taken">Pildistamise aja alusel</string>
     <string name="title">Pealkiri</string>
     <string name="filename">Faili nimi</string>
-    <string name="extension">Pikendus</string>
+    <string name="extension">Faili tüüp</string>
     <string name="random">Juhuslik</string>
     <string name="sort_randomly">Sorteeri juhuslikult</string>
     <string name="ascending">Kasvavalt</string>
@@ -378,6 +407,7 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">Kas oled kindel, et soovid kustutamist jätkata\?</string>
     <string name="deletion_confirmation">Kas sa oled kindel, et soovid %s kustutada\?</string>
+    <string name="deletion_confirmation_short">Delete %s?</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">Kas sa oled kindel, et soovid %s visata prügikasti\?</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
@@ -431,6 +461,7 @@
     <string name="seconds_letter">s</string>
     <string name="minutes_letter">m</string>
     <string name="hours_letter">h</string>
+    <string name="week_number_short">wk.</string>
     <plurals name="seconds">
         <item quantity="one">%d sekund</item>
         <item quantity="other">%d sekundit</item>
@@ -624,6 +655,16 @@
     <string name="main_screen">Põhivaade</string>
     <string name="thumbnails">Pisipildid</string>
     <string name="list_view">Nimekirja vaade</string>
+    <!-- Excluding -->
+    <string name="exclude">Välista</string>
+    <string name="exclude_folder">Välista kaust</string>
+    <string name="excluded_folders">Välistatud kaustad</string>
+    <string name="excluded">(välistatud)</string>
+    <string name="manage_excluded_folders">Halda välistatud kaustu</string>
+    <string name="remove_all">Eemalda kõik</string>
+    <string name="remove_all_description">Kas eemaldame kõik kaustad välistatud kaustade loendist\? See tegevus ei kustuta kaustu.</string>
+    <string name="temporarily_show_excluded">Näita ajutiselt välja jäetud</string>
+    <string name="stop_showing_excluded">Lõpeta näitamine välistatud</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">Halda näidatavaid vahekaarte</string>
     <string name="default_tab_to_open">Rakenduse avamisel kuvatav vahekaart</string>
@@ -679,6 +720,19 @@
     <string name="october">Oktoober</string>
     <string name="november">November</string>
     <string name="december">Detsember</string>
+    <!-- Short months -->
+    <string name="january_short">Jan</string>
+    <string name="february_short">Feb</string>
+    <string name="march_short">Mar</string>
+    <string name="april_short">Apr</string>
+    <string name="may_short">May</string>
+    <string name="june_short">June</string>
+    <string name="july_short">July</string>
+    <string name="august_short">Aug</string>
+    <string name="september_short">Sept</string>
+    <string name="october_short">Oct</string>
+    <string name="november_short">Nov</string>
+    <string name="december_short">Dec</string>
     <!-- in January -->
     <string name="in_january">jaanuaris</string>
     <string name="in_february">veebruaris</string>
@@ -743,9 +797,9 @@
     <string name="follow_us">Jälgi meid</string>
     <string name="copyright">v %1$s
 \nAutoriõigus © Lihtsad mobiilsed tööriistad %2$d</string>
-    <string name="support">Toetus</string>
-    <string name="help_us">Aidake meid</string>
-    <string name="social">Sotsiaalne</string>
+    <string name="support">Kasutajatugi</string>
+    <string name="help_us">Osale arenduses</string>
+    <string name="social">Sotsiaalmeedia</string>
     <string name="other">Muud</string>
     <string name="privacy_policy">Privaatsuspoliitika</string>
     <string name="version_placeholder">Versioon %s</string>
@@ -755,7 +809,8 @@
     <string name="app_version">Rakenduse versioon: %s</string>
     <string name="device_os">Seadme operatsioonisüsteem: %s</string>
     <string name="donate_please">Tere,&lt;br&gt;&lt;br&gt; loodan, et naudite rakendust. See ei sisalda reklaame, palun toetage selle arendamist, ostes &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Limple Aitäh&lt;/a&gt; rakendus, see takistab ka selle dialoogi uuesti ilmumist. &lt;br&gt;&lt;br&gt; Täname!</string>
-    <string name="donate_new">Tere!&lt;br&gt;&lt;br&gt;Loodan, et teile meeldib rakendus. See ei sisalda reklaame ja me ei kogu ka teie andmeid. Palun toetage selle arendamist, ostes &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Lihtne aitäh Sina&lt;/a&gt;. Samuti on teil lukustamata kõik rakenduse funktsioonid ja värvide kohandamine.&lt;br&gt;&lt;br&gt;Täname!</string>
+    <string name="donate_new">Tere!&lt;br&gt;&lt;br&gt;Loodan, et teile meeldib see rakendus. Ta ei sisalda reklaame ja me ei kogu ka sinu andmeid. Palun toeta meie arendustegevust, ostes rakenduse &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Lihtne tänuavaldus&lt;/a&gt;. Seejärel muutuvad kasutatavaks ka rakenduse lisafunktsionaalsused ja värvide kohandamine.&lt;br&gt;&lt;br&gt;Täname!</string>
+    <string name="donate_short">Palun toeta meid ostes rakenduse &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Lihtne tänuavaldus&lt;/a&gt;. Muu hulgas avab see antud rakenduse kõik funktsionaalsused ja sealhulgas võimaldab kohandada liidese värve.</string>
     <string name="purchase">Osta</string>
     <string name="get_simple_phone">Telli rakendus Lihtne telefon</string>
     <string name="update_thank_you">Palun uuenda raklendus Lihtne tänuavaldus viimase versioonini</string>
@@ -846,7 +901,7 @@
     <string name="translation">Tõlked</string>
     <string name="development">Arendus</string>
     <string name="other_help">Muu abi</string>
-    <string name="contributors_label">See loend sisaldab kõiki, kes aitasid märgatavalt mis tahes rakendust Lihtsad mobiilsed tööriistad komplektis, mitte ainult seda. Tõlgetega tegelevad vabatahtlikud, andke meile teada, kui soovite ka teie aidata. Tõlkimise juhend on aadressil &lt;a href=https://github.com/SimpleMobileTools/General-Discussion#how-can-i-suggest-an-edit-to-a-file&gt;see veebisait&lt;/a&gt; või võtke meiega ühendust aadressil &lt;href=mailto:hello@simplemobiletools.com&gt;hello@simplemobiletools.com&lt;/a&gt; kui teil on küsimusi. Aitäh kõigile panustajatele ja teistele toetajatele!</string>
+    <string name="contributors_label">See loendis on kõik, kes aitasid märgatavalt arendada või tõlkida mis tahes rakendust komplektis „Lihtsad nutitarvikud“. Tõlkimisega tegelevad vabatahtlikud, anna meile teada, kui soovid ka osaleda. Tõlkimise juhend asub &lt;a href=https://github.com/SimpleMobileTools/General-Discussion#how-can-i-suggest-an-edit-to-a-file&gt;meie Github\'i lehel&lt;/a&gt; või kui sul on küsimusi, siis võta meiega ühendust aadressil &lt;href=mailto:hello@simplemobiletools.com&gt;hello@simplemobiletools.com&lt;/a&gt;. Aitäh kõigile panustajatele ja teistele toetajatele!</string>
     <string name="translation_arabic">Araabia</string>
     <string name="translation_azerbaijani">Aserbaidžaan</string>
     <string name="translation_bengali">Bengali</string>
@@ -903,6 +958,7 @@
     <string name="why_upgrade_improved_design">Parem disain</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">Täiustatud fototöötlusprogramm</string>
+    <string name="why_upgrade_advanced_photo_video_editor">Täiustatud foto- ja videotöötlusprogramm</string>
     <string name="why_upgrade_heic_support">HEIC/HEIF failide tugi</string>
     <string name="why_upgrade_batch_renaming">Mitme faili nime korraga muutmine</string>
     <string name="why_upgrade_folder_locking">Üksikute kaustade lukustamine</string>
@@ -964,7 +1020,7 @@
     <string name="audio_record_view_title">Audio Record View (heli visualiseerimine)</string>
     <string name="sms_mms_title">SMS MMS (SMS- ja MMS-sõnumite käsitlemine)</string>
     <string name="apng_title">APNG Android (animeeritud WebP tugi)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (PDF failide kuvamise teek)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (PDF failide kuvamise teek)</string>
     <string name="m3u_parser_title">M3U Parser (m3u esitusloendi käitleja)</string>
     <string name="android_lame_title">AndroidLame (mp3 kodeerija)</string>
     <!-- Google Play listing -->

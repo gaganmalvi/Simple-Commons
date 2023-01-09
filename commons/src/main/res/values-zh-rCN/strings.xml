@@ -66,6 +66,11 @@
     <string name="disclaimer">免责声明</string>
     <string name="take_photo">拍照</string>
     <string name="choose_photo">选择照片</string>
+    <string name="choose_video">选择视频</string>
+    <string name="choose_contact">选择联系人</string>
+    <string name="choose_file">选择文件</string>
+    <string name="record_audio">录音</string>
+    <string name="record_video">录像</string>
     <!-- Events -->
     <string name="birthday">生日</string>
     <string name="anniversary">纪念日</string>
@@ -92,6 +97,10 @@
     <string name="landscape_column_count">水平列数</string>
     <string name="change_cover_image">更换封面图片</string>
     <string name="select_photo">选择图片</string>
+    <plurals name="column_counts">
+        <item quantity="one">%d column</item>
+        <item quantity="other">%d columns</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">管理黑名单</string>
     <string name="not_blocking_anyone">你没有拦截任何人。</string>
@@ -107,6 +116,7 @@
     <string name="block_unknown_calls">拦截来自未存储联系人的通话</string>
     <string name="block_unknown_messages">拦截来自未存储联系人的消息</string>
     <string name="add_blocked_number_helper_text">输入号码或模式（例如 *12345*、+1*8888）以阻止来自匹配模式的号码的所有来电和消息。</string>
+    <string name="must_make_default_caller_id_app">要拦截未知号码，你必须将应用设为默认的来电显示和骚扰电话屏蔽应用。</string>
     <!-- Favorites -->
     <string name="favorites">收藏</string>
     <string name="add_favorites">添加收藏</string>
@@ -115,6 +125,23 @@
     <!-- Search -->
     <string name="search">搜索</string>
     <string name="type_2_characters">请输入至少两个字符来开始搜索。</string>
+    <string name="search_contacts">搜索联系人</string>
+    <string name="search_favorites">搜索收藏</string>
+    <string name="search_apps">搜索应用</string>
+    <string name="search_events">搜索事件</string>
+    <string name="search_groups">搜索组</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_calls">搜索通话</string>
+    <string name="search_files">搜索文件</string>
+    <string name="search_folders">搜索文件夹</string>
+    <string name="search_files_and_folders">搜索文件和文件夹</string>
+    <string name="search_playlists">搜索播放列表</string>
+    <string name="search_artists">搜索艺术家</string>
+    <string name="search_albums">搜索专辑</string>
+    <string name="search_tracks">搜索曲目</string>
+    <string name="search_text">搜索文本</string>
+    <string name="search_conversations">搜索对话</string>
+    <string name="search_recordings">搜索录音</string>
     <!-- Filters -->
     <string name="filter">过滤</string>
     <string name="filter_pro">过滤 (Pro)</string>
@@ -126,6 +153,7 @@
     <string name="no_camera_permissions">请授予相机权限</string>
     <string name="no_audio_permissions">请授予音频权限</string>
     <string name="no_post_notifications_permissions">需要发送通知权限</string>
+    <string name="no_permission">无权限</string>
     <!-- Renaming -->
     <string name="rename_file">重命名文件</string>
     <string name="rename_folder">重命名文件夹</string>
@@ -285,6 +313,7 @@
     <string name="discard">丢弃</string>
     <string name="undo_changes">撤销更改</string>
     <string name="undo_changes_confirmation">是否撤销您的更改？</string>
+    <string name="cannot_be_undone">此操作无法撤销。</string>
     <string name="save_before_closing">您尚未保存更改，是否保存？</string>
     <string name="apply_to_all_apps">应用到所有简约系列应用</string>
     <string name="app_icon_color_warning">警告：某些桌面应用无法正确处理自定义应用图标。如果图标消失，请尝试通过 Google Play 或某个小部件启动应用（如果有的话）。
@@ -371,6 +400,7 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">是否执行此删除操作？</string>
     <string name="deletion_confirmation">您确定要删除 %s？</string>
+    <string name="deletion_confirmation_short">Delete %s?</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">您确定要移动 %s到回收站？</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
@@ -423,6 +453,7 @@
     <string name="seconds_letter">s</string>
     <string name="minutes_letter">m</string>
     <string name="hours_letter">h</string>
+    <string name="week_number_short">wk.</string>
     <plurals name="seconds">
         <item quantity="other">%d 秒</item>
     </plurals>
@@ -587,6 +618,16 @@
     <string name="main_screen">主屏幕</string>
     <string name="thumbnails">缩略图</string>
     <string name="list_view">列表视图</string>
+    <!-- Excluding -->
+    <string name="exclude">排除</string>
+    <string name="exclude_folder">排除文件夹</string>
+    <string name="excluded_folders">排除的文件夹</string>
+    <string name="excluded">(已排除)</string>
+    <string name="manage_excluded_folders">管理排除的文件夹</string>
+    <string name="remove_all">全部移除</string>
+    <string name="remove_all_description">是否移除排除列表中的所有项目？此操作不会删除文件夹本身。</string>
+    <string name="temporarily_show_excluded">临时显示已排除的</string>
+    <string name="stop_showing_excluded">停止显示已排除的</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">管理显示的页面</string>
     <string name="default_tab_to_open">应用启动时打开的页面</string>
@@ -641,6 +682,19 @@
     <string name="october">十月</string>
     <string name="november">十一月</string>
     <string name="december">十二月</string>
+    <!-- Short months -->
+    <string name="january_short">Jan</string>
+    <string name="february_short">Feb</string>
+    <string name="march_short">Mar</string>
+    <string name="april_short">Apr</string>
+    <string name="may_short">May</string>
+    <string name="june_short">June</string>
+    <string name="july_short">July</string>
+    <string name="august_short">Aug</string>
+    <string name="september_short">九月</string>
+    <string name="october_short">Oct</string>
+    <string name="november_short">Nov</string>
+    <string name="december_short">Dec</string>
     <!-- in January -->
     <string name="in_january">一月</string>
     <string name="in_february">二月</string>
@@ -723,7 +777,8 @@
             非常感谢！
         ]]>
     </string>
-    <string name="donate_new">你好，&lt;br&gt;&lt;br&gt;希望您喜欢这个应用程序。它不包含广告，我们也不收集您的数据，要支持它的开发， 请购买 &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;. 您将解锁所有的应用功能和颜色自定义。&lt;br&gt;&lt;br&gt;谢谢你！</string>
+    <string name="donate_new">你好，&lt;br&gt;&lt;br&gt;希望您喜欢这个应用程序。它不包含广告，我们也不收集您的数据，要支持它的开发， 请购买 &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;. 您将解锁所有的应用功能，包括颜色自定义。&lt;br&gt;&lt;br&gt;谢谢你！</string>
+    <string name="donate_short">请购买 &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt; 支持我们，购买后还可解锁所有应用功能，包括允许定制颜色。</string>
     <string name="purchase">购买</string>
     <string name="get_simple_phone">订购 Simple Phone</string>
     <string name="update_thank_you">请更新简单感谢到最新版本</string>
@@ -872,6 +927,7 @@
     <string name="why_upgrade_improved_design">改进的设计</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">高级照片编辑器</string>
+    <string name="why_upgrade_advanced_photo_video_editor">高级照片和视频编辑器</string>
     <string name="why_upgrade_heic_support">支持 HEIC/HEIF 文件</string>
     <string name="why_upgrade_batch_renaming">高级批量文件重命名</string>
     <string name="why_upgrade_folder_locking">单独文件夹锁定</string>
@@ -933,7 +989,7 @@
     <string name="audio_record_view_title">Audio Record View (音频可视化)</string>
     <string name="sms_mms_title">SMS MMS (短信和彩信处理)</string>
     <string name="apng_title">APNG Android (动画 WebP 支持)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (PDF 查看器)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (PDF 查看器)</string>
     <string name="m3u_parser_title">M3U 解析器 (m3u 播放列表文件处理)</string>
     <string name="android_lame_title">AndroidLame (mp3 编码器)</string>
     <!-- Google Play listing -->

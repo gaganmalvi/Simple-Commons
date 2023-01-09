@@ -66,6 +66,11 @@
     <string name="disclaimer">Descargo de responsabilidad</string>
     <string name="take_photo">Sacar una fotografía</string>
     <string name="choose_photo">Escoger foto</string>
+    <string name="choose_video">Elija un vídeo</string>
+    <string name="choose_contact">Elija un contacto</string>
+    <string name="choose_file">Elija un archivo</string>
+    <string name="record_audio">Grabar audio</string>
+    <string name="record_video">Grabar vídeo</string>
     <!-- Events -->
     <string name="birthday">Cumpleaños</string>
     <string name="anniversary">Aniversario</string>
@@ -73,7 +78,7 @@
     <string name="home">Casa</string>
     <string name="work">Trabajo</string>
     <!-- Phone numbers -->
-    <string name="mobile">Celular</string>
+    <string name="mobile">Móvil</string>
     <string name="main_number">Principal</string>
     <string name="work_fax">Fax del trabajo</string>
     <string name="home_fax">Fax de casa</string>
@@ -92,6 +97,11 @@
     <string name="landscape_column_count">Recuento de columnas apaisadas</string>
     <string name="change_cover_image">Cambiar la imagen de la portada</string>
     <string name="select_photo">Seleccione Foto</string>
+    <plurals name="column_counts">
+        <item quantity="one">Columna %d</item>
+        <item quantity="many">Columnas %d</item>
+        <item quantity="other">Columnas %d</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">Administrar números bloqueados</string>
     <string name="not_blocking_anyone">Aún no has bloqueado a nadie.</string>
@@ -107,6 +117,7 @@
     <string name="block_unknown_calls">Bloquear llamadas de contactos no guardados</string>
     <string name="block_unknown_messages">Bloquear los mensajes de los contactos no guardados</string>
     <string name="add_blocked_number_helper_text">Ingrese un número o un patrón (por ejemplo, *12345*, +1*8888) para bloquear todas las llamadas y mensajes de números que coincidan con el patrón.</string>
+    <string name="must_make_default_caller_id_app">No se pueden bloquear los números desconocidos sin el permiso del identificador de llamadas.</string>
     <!-- Favorites -->
     <string name="favorites">Favoritos</string>
     <string name="add_favorites">Añadir a favoritos</string>
@@ -115,6 +126,23 @@
     <!-- Search -->
     <string name="search">Buscar</string>
     <string name="type_2_characters">Escribe por lo menos dos caracteres para iniciar la búsqueda.</string>
+    <string name="search_contacts">Buscar los contactos</string>
+    <string name="search_favorites">Buscar los favoritos</string>
+    <string name="search_apps">Buscar las aplicaciones</string>
+    <string name="search_events">Buscar los eventos</string>
+    <string name="search_groups">Buscar los grupos</string>
+    <string name="search_history">Historial de las búsquedas</string>
+    <string name="search_calls">Buscar las llamadas</string>
+    <string name="search_files">Buscar los archivos</string>
+    <string name="search_folders">Buscar las carpetas</string>
+    <string name="search_files_and_folders">Buscar los archivos y las carpetas</string>
+    <string name="search_playlists">Buscar las listas de reproducción</string>
+    <string name="search_artists">Buscar los artistas</string>
+    <string name="search_albums">Buscar los álbumes</string>
+    <string name="search_tracks">Buscar las pistas</string>
+    <string name="search_text">Buscar el texto</string>
+    <string name="search_conversations">Buscar las conversaciones</string>
+    <string name="search_recordings">Buscar las grabaciones</string>
     <!-- Filters -->
     <string name="filter">Filtrar</string>
     <string name="filter_pro">Filtrar (Pro)</string>
@@ -126,6 +154,7 @@
     <string name="no_camera_permissions">Se requiere permiso para la Cámara</string>
     <string name="no_audio_permissions">Se requiere permiso de Audio</string>
     <string name="no_post_notifications_permissions">Se requiere permiso para publicar notificaciones</string>
+    <string name="no_permission">Sin autorización</string>
     <!-- Renaming -->
     <string name="rename_file">Renombrar archivo</string>
     <string name="rename_folder">Renombrar carpeta</string>
@@ -292,6 +321,7 @@
     <string name="discard">Deshacer</string>
     <string name="undo_changes">Deshacer cambios</string>
     <string name="undo_changes_confirmation">¿Seguro que quiere deshacer los cambios?</string>
+    <string name="cannot_be_undone">Esta acción no se puede deshacer.</string>
     <string name="save_before_closing">Tiene cambios sin aplicar. ¿Guardar antes de salir?</string>
     <string name="apply_to_all_apps">Aplicar colores a todas las aplicaciones Simple Apps</string>
     <string name="app_icon_color_warning">ADVERTENCIA: Algunos launchers no manejan correctamente la personalización del icono de la aplicación. En caso de que el icono desaparezca, intente iniciar la aplicación a través de Google Play o algún widget, si está disponible.
@@ -382,6 +412,7 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">¿Estás seguro de que quieres proceder a la eliminación\?</string>
     <string name="deletion_confirmation">¿Estas seguro que quieres borrar %s?</string>
+    <string name="deletion_confirmation_short">Delete %s?</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">¿Estás seguro de que quieres mover %s a la papelera de reciclaje?</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
@@ -436,6 +467,7 @@
     <string name="seconds_letter">s</string>
     <string name="minutes_letter">m</string>
     <string name="hours_letter">h</string>
+    <string name="week_number_short">wk.</string>
     <plurals name="seconds">
         <item quantity="one">%d segundo</item>
         <item quantity="many">%d segundos</item>
@@ -657,6 +689,16 @@
     <string name="main_screen">Pantalla principal</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="list_view">Vista de Lista</string>
+    <!-- Excluding -->
+    <string name="exclude">Excluir</string>
+    <string name="exclude_folder">Excluir la carpeta</string>
+    <string name="excluded_folders">Carpetas excluidas</string>
+    <string name="excluded">(Excluido)</string>
+    <string name="manage_excluded_folders">Gestionar carpetas excluidas</string>
+    <string name="remove_all">Eliminar todo</string>
+    <string name="remove_all_description">¿Eliminar todas las carpetas de la lista de excluidas\? Nota: Esto no borrará las carpetas.</string>
+    <string name="temporarily_show_excluded">Mostrar excluidos temporalmente</string>
+    <string name="stop_showing_excluded">Dejar de mostrar excluidos</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">Administrar pestañas mostradas</string>
     <string name="default_tab_to_open">Pestaña para abrir al inicio de la aplicación</string>
@@ -713,6 +755,19 @@
     <string name="october">Octubre</string>
     <string name="november">Noviembre</string>
     <string name="december">Diciembre</string>
+    <!-- Short months -->
+    <string name="january_short">Jan</string>
+    <string name="february_short">Feb</string>
+    <string name="march_short">Mar</string>
+    <string name="april_short">Apr</string>
+    <string name="may_short">May</string>
+    <string name="june_short">June</string>
+    <string name="july_short">July</string>
+    <string name="august_short">Aug</string>
+    <string name="september_short">Sept</string>
+    <string name="october_short">Oct</string>
+    <string name="november_short">Nov</string>
+    <string name="december_short">Dec</string>
     <!-- in January -->
     <string name="in_january">en Enero</string>
     <string name="in_february">en Febrero</string>
@@ -795,7 +850,8 @@
             ¡Gracias!
         ]]>
     </string>
-    <string name="donate_new">Hola,&lt;br&gt;&lt;br&gt;Espero que estés disfrutando de la aplicación. No contiene anuncios y tampoco recopilamos sus datos. Apoye su desarrollo comprando &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simplemente Gracias&lt;/a&gt;. También desbloqueará todas las funciones de la aplicación y la personalización del color.&lt;br&gt;&lt;br&gt;¡Gracias!</string>
+    <string name="donate_new">Hola,&lt;br&gt;&lt;br&gt;espero que estés disfrutando de la aplicación. No contiene anuncios y tampoco recopilamos sus datos. Apoye su desarrollo comprando &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Gracias&lt;/a&gt;. También desbloqueará todas las funciones de la aplicación, incluida la personalización del color.&lt;br&gt;&lt;br&gt;¡Gracias!</string>
+    <string name="donate_short">Apóyenos comprando &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Gracias&lt;/a&gt; por favor, también desbloqueará todas las funciones de la aplicación, incluido los colores.</string>
     <string name="purchase">Comprar</string>
     <string name="get_simple_phone">Conseguir un teléfono sencillo</string>
     <string name="update_thank_you">Por favor, actualice Simple Gracias a la última versión</string>
@@ -965,6 +1021,7 @@
     <string name="why_upgrade_improved_design">Diseño mejorado</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">Editor de fotos avanzado</string>
+    <string name="why_upgrade_advanced_photo_video_editor">Editor avanzado de fotos y videos</string>
     <string name="why_upgrade_heic_support">Compatible con archivos HEIC/HEIF</string>
     <string name="why_upgrade_batch_renaming">Cambio de nombre de archivo por lotes avanzado</string>
     <string name="why_upgrade_folder_locking">Bloqueo de carpeta individual</string>
@@ -1026,7 +1083,7 @@
     <string name="audio_record_view_title">Audio Record View (Visualización de audio)</string>
     <string name="sms_mms_title">SMS MMS (Manejo de SMS y MMS)</string>
     <string name="apng_title">APNG Android (Soporte WebP animado)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (visor de PDF)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (visor de PDF)</string>
     <string name="m3u_parser_title">M3U Parser (manejo de archivos de listas de reproducción m3u)</string>
     <string name="android_lame_title">AndroidLame (codificador de mp3)</string>
     <!-- Google Play listing -->

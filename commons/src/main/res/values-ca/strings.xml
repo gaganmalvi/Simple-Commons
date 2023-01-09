@@ -66,6 +66,11 @@
     <string name="disclaimer">Exempció de responsabilitat</string>
     <string name="take_photo">Fes una foto</string>
     <string name="choose_photo">Tria una foto</string>
+    <string name="choose_video">Tria un vídeo</string>
+    <string name="choose_contact">Tria un contacte</string>
+    <string name="choose_file">Tria un fitxer</string>
+    <string name="record_audio">Grava àudio</string>
+    <string name="record_video">Grava vídeo</string>
     <!-- Events -->
     <string name="birthday">Data de naixement</string>
     <string name="anniversary">Aniversari</string>
@@ -92,6 +97,10 @@
     <string name="landscape_column_count">Nombre de columnes horitzontals</string>
     <string name="change_cover_image">Canvia la imatge de la portada</string>
     <string name="select_photo">Selecciona una foto</string>
+    <plurals name="column_counts">
+        <item quantity="one">%d columna</item>
+        <item quantity="other">%d de columnes</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">Gestió dels números bloquejats</string>
     <string name="not_blocking_anyone">No esteu bloquejant a ningú.</string>
@@ -107,6 +116,7 @@
     <string name="block_unknown_calls">Bloqueja les trucades de contactes no emmagatzemats</string>
     <string name="block_unknown_messages">Bloqueja els missatges dels contactes no emmagatzemats</string>
     <string name="add_blocked_number_helper_text">Introduïu un número o un patró (per exemple, *12345*, +1*8888) per bloquejar totes les trucades i missatges dels números que coincideixin amb el patró.</string>
+    <string name="must_make_default_caller_id_app">No es poden bloquejar números desconeguts sense el permís d\'identificació de trucades.</string>
     <!-- Favorites -->
     <string name="favorites">Preferits</string>
     <string name="add_favorites">Afegeix preferits</string>
@@ -115,6 +125,23 @@
     <!-- Search -->
     <string name="search">Cerca</string>
     <string name="type_2_characters">Escriviu com a mínim 2 caràcters per iniciar la cerca.</string>
+    <string name="search_contacts">Cerca contactes</string>
+    <string name="search_favorites">Cerca als preferits</string>
+    <string name="search_apps">Cerca aplicacions</string>
+    <string name="search_events">Cerca esdeveniments</string>
+    <string name="search_groups">Cerca grups</string>
+    <string name="search_history">Historial de cerques</string>
+    <string name="search_calls">Cerca trucades</string>
+    <string name="search_files">Cerca fitxers</string>
+    <string name="search_folders">Cerca carpetes</string>
+    <string name="search_files_and_folders">Cerca fitxers i carpetes</string>
+    <string name="search_playlists">Cerca llistes de reproducció</string>
+    <string name="search_artists">Cerca artistes</string>
+    <string name="search_albums">Cerca àlbums</string>
+    <string name="search_tracks">Cerca pistes</string>
+    <string name="search_text">Cerca text</string>
+    <string name="search_conversations">Cerca converses</string>
+    <string name="search_recordings">Cerca enregistraments</string>
     <!-- Filters -->
     <string name="filter">Filtre</string>
     <string name="filter_pro">Filtre (Pro)</string>
@@ -126,6 +153,7 @@
     <string name="no_camera_permissions">Es requereix permís d\'accés a la càmera</string>
     <string name="no_audio_permissions">Es requereix permís d\'accés a l\'àudio</string>
     <string name="no_post_notifications_permissions">Cal permís per publicar notificacions</string>
+    <string name="no_permission">Sense permís</string>
     <!-- Renaming -->
     <string name="rename_file">Canvia el nom del fitxer</string>
     <string name="rename_folder">Canvia el nom de la carpeta</string>
@@ -226,21 +254,21 @@
     <string name="access_storage_prompt">Si us plau, concediu accés de la nostra aplicació a tots els vostres fitxers, és possible que no funcioni bé sense això.</string>
     <plurals name="items">
         <item quantity="one">%d element</item>
-        <item quantity="other">%d elements</item>
+        <item quantity="other">%d d\'elements</item>
     </plurals>
     <!-- Are you sure you want to delete 5 items? -->
     <plurals name="delete_items">
         <item quantity="one">%d element</item>
-        <item quantity="other">%d elements</item>
+        <item quantity="other">%d d\'elements</item>
     </plurals>
     <plurals name="deleting_items">
         <item quantity="one">S\'està suprimint %d element</item>
-        <item quantity="other">S\'estan suprimint %d elements</item>
+        <item quantity="other">S\'estan suprimint %d d\'elements</item>
     </plurals>
     <!-- Are you sure you want to delete 5 contacts? -->
     <plurals name="delete_contacts">
         <item quantity="one">%d contacte</item>
-        <item quantity="other">%d contactes</item>
+        <item quantity="other">%d de contactes</item>
     </plurals>
     <!-- Storages -->
     <string name="select_storage">Seleccioneu l\'emmagatzematge</string>
@@ -293,6 +321,7 @@
     <string name="discard">Descarta</string>
     <string name="undo_changes">Desfés els canvis</string>
     <string name="undo_changes_confirmation">Segur que voleu desfer els canvis\?</string>
+    <string name="cannot_be_undone">Aquesta acció no es pot desfer.</string>
     <string name="save_before_closing">Hi ha canvis no desats. Els voleu desar abans de sortir\?</string>
     <string name="apply_to_all_apps">Aplica els colors a totes les aplicacions Simple</string>
     <string name="app_icon_color_warning">ADVERTÈNCIA: Alguns llançadors no gestionen correctament la personalització de la icona d\'aplicació. En cas que la icona desaparegui, proveu de llançar l\'aplicació mitjançant Google Play o algun giny, si està disponible. Un cop llançat, configureu la icona de color taronja predeterminat #F57C00. És possible que calgui tornar a instal·lar l\'aplicació en el pitjor dels casos.</string>
@@ -378,6 +407,7 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">Segur que voleu continuar amb la supressió\?</string>
     <string name="deletion_confirmation">Segur que voleu suprimir %s\?</string>
+    <string name="deletion_confirmation_short">Delete %s?</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">Segur que voleu moure %s a la paperera\?</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
@@ -390,7 +420,7 @@
     <string name="maybe">Potser</string>
     <plurals name="delete_warning">
         <item quantity="one">ADVERTÈNCIA: Se suprimirà %d carpeta</item>
-        <item quantity="other">ADVERTÈNCIA: Se suprimiran %d carpetes</item>
+        <item quantity="other">ADVERTÈNCIA: Se suprimiran %d de carpetes</item>
     </plurals>
     <!-- Password protection -->
     <string name="pin">PIN</string>
@@ -431,120 +461,121 @@
     <string name="seconds_letter">s</string>
     <string name="minutes_letter">m</string>
     <string name="hours_letter">h</string>
+    <string name="week_number_short">wk.</string>
     <plurals name="seconds">
         <item quantity="one">%d segon</item>
-        <item quantity="other">%d segons</item>
+        <item quantity="other">%d de segons</item>
     </plurals>
     <plurals name="minutes">
         <item quantity="one">%d minut</item>
-        <item quantity="other">%d minuts</item>
+        <item quantity="other">%d de minuts</item>
     </plurals>
     <plurals name="hours">
         <item quantity="one">%d hora</item>
-        <item quantity="other">%d hores</item>
+        <item quantity="other">%d d\'hores</item>
     </plurals>
     <plurals name="days">
         <item quantity="one">%d dia</item>
-        <item quantity="other">%d dies</item>
+        <item quantity="other">%d de dies</item>
     </plurals>
     <plurals name="weeks">
         <item quantity="one">%d setmana</item>
-        <item quantity="other">%d setmanes</item>
+        <item quantity="other">%d de setmanes</item>
     </plurals>
     <plurals name="months">
         <item quantity="one">%d mes</item>
-        <item quantity="other">%d mesos</item>
+        <item quantity="other">%d de mesos</item>
     </plurals>
     <plurals name="years">
         <item quantity="one">%d any</item>
-        <item quantity="other">%d anys</item>
+        <item quantity="other">%d d\'anys</item>
     </plurals>
     <!-- For example: I will be there in 5 minutes -->
     <plurals name="in_seconds">
         <item quantity="one">%d segon</item>
-        <item quantity="other">%d segons</item>
+        <item quantity="other">%d de segons</item>
     </plurals>
     <plurals name="in_minutes">
         <item quantity="one">%d minut</item>
-        <item quantity="other">%d minuts</item>
+        <item quantity="other">%d de minuts</item>
     </plurals>
     <plurals name="in_hours">
         <item quantity="one">%d hora</item>
-        <item quantity="other">%d hores</item>
+        <item quantity="other">%d d\'hores</item>
     </plurals>
     <plurals name="in_days">
         <item quantity="one">%d dia</item>
-        <item quantity="other">%d dies</item>
+        <item quantity="other">%d de dies</item>
     </plurals>
     <plurals name="in_weeks">
         <item quantity="one">%d setmana</item>
-        <item quantity="other">%d setmanes</item>
+        <item quantity="other">%d de setmanes</item>
     </plurals>
     <plurals name="in_months">
         <item quantity="one">%d mes</item>
-        <item quantity="other">%d mesos</item>
+        <item quantity="other">%d de mesos</item>
     </plurals>
     <plurals name="in_years">
         <item quantity="one">%d any</item>
-        <item quantity="other">%d anys</item>
+        <item quantity="other">%d d\'anys</item>
     </plurals>
     <!-- For example: Event reminder: 3 minutes before -->
     <plurals name="seconds_before">
         <item quantity="one">%d segon abans</item>
-        <item quantity="other">%d segons abans</item>
+        <item quantity="other">%d de segons abans</item>
     </plurals>
     <plurals name="minutes_before">
         <item quantity="one">%d minut abans</item>
-        <item quantity="other">%d minuts abans</item>
+        <item quantity="other">%d de minuts abans</item>
     </plurals>
     <plurals name="hours_before">
         <item quantity="one">%d hora abans</item>
-        <item quantity="other">%d hores abans</item>
+        <item quantity="other">%d d\'hores abans</item>
     </plurals>
     <plurals name="days_before">
         <item quantity="one">%d dia abans</item>
-        <item quantity="other">%d dies abans</item>
+        <item quantity="other">%d de dies abans</item>
     </plurals>
     <plurals name="weeks_before">
         <item quantity="one">%d setmana abans</item>
-        <item quantity="other">%d setmanes abans</item>
+        <item quantity="other">%d de setmanes abans</item>
     </plurals>
     <plurals name="months_before">
         <item quantity="one">%d mes abans</item>
-        <item quantity="other">%d mesos abans</item>
+        <item quantity="other">%d de mesos abans</item>
     </plurals>
     <plurals name="years_before">
         <item quantity="one">%d any abans</item>
-        <item quantity="other">%d anys abans</item>
+        <item quantity="other">%d d\'anys abans</item>
     </plurals>
     <!-- For example: Postpone reminder by 3 minutes -->
     <plurals name="by_seconds">
         <item quantity="one">%d segon</item>
-        <item quantity="other">%d segons</item>
+        <item quantity="other">%d de segons</item>
     </plurals>
     <plurals name="by_minutes">
         <item quantity="one">%d minut</item>
-        <item quantity="other">%d minuts</item>
+        <item quantity="other">%d de minuts</item>
     </plurals>
     <plurals name="by_hours">
         <item quantity="one">%d hora</item>
-        <item quantity="other">%d hores</item>
+        <item quantity="other">%d d\'hores</item>
     </plurals>
     <plurals name="by_days">
         <item quantity="one">%d dia</item>
-        <item quantity="other">%d dies</item>
+        <item quantity="other">%d de dies</item>
     </plurals>
     <plurals name="by_weeks">
         <item quantity="one">%d setmana</item>
-        <item quantity="other">%d setmanes</item>
+        <item quantity="other">%d de setmanes</item>
     </plurals>
     <plurals name="by_months">
         <item quantity="one">%d mes</item>
-        <item quantity="other">%d mesos</item>
+        <item quantity="other">%d de mesos</item>
     </plurals>
     <plurals name="by_years">
         <item quantity="one">%d any</item>
-        <item quantity="other">%d anys</item>
+        <item quantity="other">%d d\'anys</item>
     </plurals>
     <!-- For example: Time remaining till the alarm goes off: 6 hours, 5 minutes -->
     <string name="alarm_goes_off_in">Temps restant fins que soni l\'alarma: \n%s</string>
@@ -623,6 +654,16 @@
     <string name="main_screen">Pantalla principal</string>
     <string name="thumbnails">Miniatures</string>
     <string name="list_view">Vista de llista</string>
+    <!-- Excluding -->
+    <string name="exclude">Exclou</string>
+    <string name="exclude_folder">Exclou la carpeta</string>
+    <string name="excluded_folders">Carpetes excloses</string>
+    <string name="excluded">(exclòs)</string>
+    <string name="manage_excluded_folders">Gestiona les carpetes excloses</string>
+    <string name="remove_all">Elimina-ho tot</string>
+    <string name="remove_all_description">Elimino totes les carpetes de la llista d\'excloses\? Això no eliminarà les carpetes.</string>
+    <string name="temporarily_show_excluded">Mostra temporalment les excloses</string>
+    <string name="stop_showing_excluded">Deixa de mostrar les excloses</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">Gestiona les pestanyes mostrades</string>
     <string name="default_tab_to_open">Pestanya a obrir en iniciar l\'aplicació</string>
@@ -645,8 +686,8 @@
     <string name="show_the_recycle_bin">Mostra la paperera de reciclatge</string>
     <string name="hide_the_recycle_bin">Oculta la paperera de reciclatge</string>
     <plurals name="moving_items_into_bin">
-        <item quantity="one">Movent %d element a la paperera de reciclatge</item>
-        <item quantity="other">Movent %d elements a la paperera de reciclatge</item>
+        <item quantity="one">S\'està movent %d element a la paperera de reciclatge</item>
+        <item quantity="other">S\'està movent %d d\'elements a la paperera de reciclatge</item>
     </plurals>
     <!-- Import / Export -->
     <string name="importing">S\'està important…</string>
@@ -678,6 +719,19 @@
     <string name="october">Octubre</string>
     <string name="november">Novembre</string>
     <string name="december">Desembre</string>
+    <!-- Short months -->
+    <string name="january_short">Jan</string>
+    <string name="february_short">Feb</string>
+    <string name="march_short">Mar</string>
+    <string name="april_short">Apr</string>
+    <string name="may_short">May</string>
+    <string name="june_short">June</string>
+    <string name="july_short">July</string>
+    <string name="august_short">Aug</string>
+    <string name="september_short">Sept</string>
+    <string name="october_short">Oct</string>
+    <string name="november_short">Nov</string>
+    <string name="december_short">Dec</string>
     <!-- in January -->
     <string name="in_january">de gener</string>
     <string name="in_february">de febrer</string>
@@ -753,7 +807,8 @@
     <string name="app_version">Versió de l\'aplicació: %s</string>
     <string name="device_os">SO del dispositiu: %s</string>
     <string name="donate_please">Hola,&lt;br&gt;&lt;br&gt; esperem que gaudiu de l\'aplicació. No conté cap anunci, així que si us plau, ajudeu el seu desenvolupament comprant l\'aplicació &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;, també evitarà que aquest diàleg es torni a mostrar.&lt;br&gt;&lt;br&gt; Gràcies!</string>
-    <string name="donate_new">Hola,&lt;br&gt;&lt;br&gt;espero que gaudiu de l\'aplicació. No conté anuncis i tampoc es recopilen les vostres dades. Si us plau, doneu suport al seu desenvolupament comprant &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank Tou&lt;/a&gt;. També tindreu totes les funcions de l\'aplicació i la personalització del color desbloquejades.&lt;br&gt;&lt;br&gt;Gràcies!</string>
+    <string name="donate_new">Hola,&lt;br&gt;&lt;br&gt;espero que gaudiu de l\'aplicació. No conté anuncis i tampoc es recopilen les vostres dades. Si us plau, doneu suport al seu desenvolupament comprant &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank Tou&lt;/a&gt;. També disposareu de totes les funcions de l\'aplicació incloent-hi la personalització del color desbloquejada.&lt;br&gt;&lt;br&gt;Gràcies!</string>
+    <string name="donate_short">Ajudeu-nos comprant la &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;, també desbloquejarà totes les funcions de l\'aplicació incloent-hi la personalització del color.</string>
     <string name="purchase">Compra</string>
     <string name="get_simple_phone">Encarregueu un Simple Phone</string>
     <string name="update_thank_you">Si us plau, actualitzeu Simple Thank You a la darrera versió</string>
@@ -901,6 +956,7 @@
     <string name="why_upgrade_improved_design">Disseny millorat</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">Editor de fotos avançat</string>
+    <string name="why_upgrade_advanced_photo_video_editor">Editor avançat de fotos i vídeos</string>
     <string name="why_upgrade_heic_support">Implementació de fitxers HEIC/HEIF</string>
     <string name="why_upgrade_batch_renaming">Canvi de nom de fitxers per lots avançat</string>
     <string name="why_upgrade_folder_locking">Bloqueig de carpetes individuals</string>
@@ -962,7 +1018,7 @@
     <string name="audio_record_view_title">Audio Record View (visualització d\'àudio)</string>
     <string name="sms_mms_title">SMS MMS (gestió d\'SMS i MMS)</string>
     <string name="apng_title">APNG Android (implementa WebP animades)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (visualitzador de PDF)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (visualitzador de PDF)</string>
     <string name="m3u_parser_title">Analitzador M3U (gestió de fitxers «m3u» de llistes de reproducció)</string>
     <string name="android_lame_title">AndroidLame (codificador «mp3»)</string>
     <!-- Google Play listing -->

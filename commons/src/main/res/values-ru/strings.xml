@@ -65,7 +65,12 @@
     <string name="app_corrupt">Приложение повреждено</string>
     <string name="disclaimer">Отказ от ответственности</string>
     <string name="take_photo">Сделать фото</string>
-    <string name="choose_photo">Выбрать фото</string>
+    <string name="choose_photo">Выбор фото</string>
+    <string name="choose_video">Выбор видео</string>
+    <string name="choose_contact">Выбор контакта</string>
+    <string name="choose_file">Выбор файла</string>
+    <string name="record_audio">Запись звука</string>
+    <string name="record_video">Запись видео</string>
     <!-- Events -->
     <string name="birthday">День рождения</string>
     <string name="anniversary">Годовщина</string>
@@ -85,13 +90,19 @@
     <string name="grid_pro">Сетка (Pro)</string>
     <string name="uneven_grid">Неровная сетка</string>
     <string name="list">Список</string>
-    <string name="increase_column_count">Добавить столбец</string>
-    <string name="reduce_column_count">Убрать столбец</string>
-    <string name="column_count">Количество столбцов</string>
-    <string name="portrait_column_count">Количество столбцов в портретной ориентации</string>
-    <string name="landscape_column_count">Количество столбцов в альбомной ориентации</string>
+    <string name="increase_column_count">Добавить колонку</string>
+    <string name="reduce_column_count">Убрать колонку</string>
+    <string name="column_count">Количество колонок</string>
+    <string name="portrait_column_count">Количество колонок в портретной ориентации</string>
+    <string name="landscape_column_count">Количество колонок в альбомной ориентации</string>
     <string name="change_cover_image">Изменить обложку</string>
     <string name="select_photo">Выбрать изображение</string>
+    <plurals name="column_counts">
+        <item quantity="one">%d колонка</item>
+        <item quantity="few">%d колонки</item>
+        <item quantity="many">%d колонок</item>
+        <item quantity="other">%d колонок</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">Управление блокируемыми номерами</string>
     <string name="not_blocking_anyone">Нет блокируемых номеров.</string>
@@ -107,6 +118,7 @@
     <string name="block_unknown_calls">Блокировать вызовы от несохранённых контактов</string>
     <string name="block_unknown_messages">Блокировать сообщения от несохранённых контактов</string>
     <string name="add_blocked_number_helper_text">Введите номер или шаблон (например: *12345*, +1*8888), чтобы блокировать все вызовы и сообщения с номеров, соответствующих шаблону.</string>
+    <string name="must_make_default_caller_id_app">Невозможно блокировать неизвестные номера без разрешения идентификации вызывающего абонента.</string>
     <!-- Favorites -->
     <string name="favorites">Избранное</string>
     <string name="add_favorites">Добавить избранное</string>
@@ -115,6 +127,23 @@
     <!-- Search -->
     <string name="search">Поиск</string>
     <string name="type_2_characters">Введите как минимум 2 символа для начала поиска.</string>
+    <string name="search_contacts">Поиск контактов</string>
+    <string name="search_favorites">Поиск избранного</string>
+    <string name="search_apps">Поиск приложений</string>
+    <string name="search_events">Поиск событий</string>
+    <string name="search_groups">Поиск групп</string>
+    <string name="search_history">Поиск истории</string>
+    <string name="search_calls">Поиск вызовов</string>
+    <string name="search_files">Поиск файлов</string>
+    <string name="search_folders">Поиск папок</string>
+    <string name="search_files_and_folders">Поиск файлов и папок</string>
+    <string name="search_playlists">Поиск списков воспроизведения</string>
+    <string name="search_artists">Поиск исполнителей</string>
+    <string name="search_albums">Поиск альбомов</string>
+    <string name="search_tracks">Поиск композиций</string>
+    <string name="search_text">Поиск текста</string>
+    <string name="search_conversations">Поиск переписок</string>
+    <string name="search_recordings">Поиск записей</string>
     <!-- Filters -->
     <string name="filter">Фильтр</string>
     <string name="filter_pro">Фильтр (Pro)</string>
@@ -126,6 +155,7 @@
     <string name="no_camera_permissions">Требуется разрешение для доступа к камере</string>
     <string name="no_audio_permissions">Требуется разрешение для доступа аудиосистеме</string>
     <string name="no_post_notifications_permissions">Требуется разрешение на отображение уведомлений</string>
+    <string name="no_permission">Отсутствует разрешение</string>
     <!-- Renaming -->
     <string name="rename_file">Изменение имени файла</string>
     <string name="rename_folder">Изменение имени папки</string>
@@ -299,6 +329,7 @@
     <string name="discard">Нет</string>
     <string name="undo_changes">Отменить изменения</string>
     <string name="undo_changes_confirmation">Отменить изменения?</string>
+    <string name="cannot_be_undone">Это действие не может быть отменено.</string>
     <string name="save_before_closing">У вас есть несохранённые изменения. Сохранить перед выходом?</string>
     <string name="apply_to_all_apps">Применить цвета ко всем приложениям Simple</string>
     <string name="app_icon_color_warning">ВНИМАНИЕ: некоторые рабочие столы неправильно обрабатывают изменение настроек значков приложений. Если значок исчезнет, попробуйте запустить приложение через Google Play или виджет, если он доступен.
@@ -385,6 +416,7 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">Подтверждение удаления</string>
     <string name="deletion_confirmation">Удалить %s?</string>
+    <string name="deletion_confirmation_short">Delete %s?</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">Переместить %s в корзину?</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
@@ -439,6 +471,7 @@
     <string name="seconds_letter">с</string>
     <string name="minutes_letter">м</string>
     <string name="hours_letter">ч</string>
+    <string name="week_number_short">wk.</string>
     <plurals name="seconds">
         <item quantity="one">%d секунда</item>
         <item quantity="few">%d секунды</item>
@@ -659,6 +692,16 @@
     <string name="main_screen">Главный экран</string>
     <string name="thumbnails">Эскизы</string>
     <string name="list_view">Вид списка</string>
+    <!-- Excluding -->
+    <string name="exclude">Исключить</string>
+    <string name="exclude_folder">Исключить папку</string>
+    <string name="excluded_folders">Исключённые папки</string>
+    <string name="excluded">(исключено)</string>
+    <string name="manage_excluded_folders">Управление исключёнными папками</string>
+    <string name="remove_all">Удалить всё</string>
+    <string name="remove_all_description">Очистить список исключённых папок\? Сами папки не будут удалены.</string>
+    <string name="temporarily_show_excluded">Временно показать исключённые</string>
+    <string name="stop_showing_excluded">Не показывать исключённые</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">Управление отображаемыми вкладками</string>
     <string name="default_tab_to_open">Открываемая при запуске вкладка</string>
@@ -715,6 +758,19 @@
     <string name="october">Октябрь</string>
     <string name="november">Ноябрь</string>
     <string name="december">Декабрь</string>
+    <!-- Short months -->
+    <string name="january_short">Jan</string>
+    <string name="february_short">Feb</string>
+    <string name="march_short">Mar</string>
+    <string name="april_short">Apr</string>
+    <string name="may_short">May</string>
+    <string name="june_short">June</string>
+    <string name="july_short">July</string>
+    <string name="august_short">Aug</string>
+    <string name="september_short">Sept</string>
+    <string name="october_short">Oct</string>
+    <string name="november_short">Nov</string>
+    <string name="december_short">Dec</string>
     <!-- in January -->
     <string name="in_january">в январе</string>
     <string name="in_february">в феврале</string>
@@ -791,7 +847,8 @@
     <string name="app_version">Версия приложения: %s</string>
     <string name="device_os">ОС устройства: %s</string>
     <string name="donate_please">Привет,&lt;br&gt;&lt;br&gt; надеюсь, вам нравится приложение. Оно не содержит рекламы, поэтому, пожалуйста, поддержите разработку, купив приложение &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Простое спасибо&lt;/a&gt;. Покупка также предотвратит повторное появление данного диалогового окна.&lt;br&gt;&lt;br&gt; Спасибо!</string>
-    <string name="donate_new">Привет,&lt;br&gt;&lt;br&gt;надеюсь, вам нравится приложение. Он не содержит рекламы и не собирает ваши персональные данные. Пожалуйста, поддержите его разработку, купив &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Простое спасибо&lt;/a&gt;. У вас также будут разблокированы все функции приложения и настройка цвета.&lt;br&gt;&lt;br&gt;Спасибо!</string>
+    <string name="donate_new">Привет,&lt;br&gt;&lt;br&gt;надеюсь, вам нравится приложение. Оно не содержит рекламы и не собирает ваши персональные данные. Пожалуйста, поддержите его разработку, купив &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Простое спасибо&lt;/a&gt;. У вас также будут разблокированы все функции приложения, включая настройку цвета.&lt;br&gt;&lt;br&gt;Спасибо!</string>
+    <string name="donate_short">Поддержите нас покупкой &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Просто спасибо&lt;/a&gt;, которая также разблокирует все функции приложения, включая настройку цвета.</string>
     <string name="purchase">Купить</string>
     <string name="get_simple_phone">Получить \"Простой телефон\"</string>
     <string name="update_thank_you">Обновите \"Простое спасибо\" до последней версии</string>
@@ -958,6 +1015,7 @@
     <string name="why_upgrade_improved_design">Улучшенный дизайн</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">Мощный фоторедактор</string>
+    <string name="why_upgrade_advanced_photo_video_editor">Расширенный редактор фото и видео</string>
     <string name="why_upgrade_heic_support">Поддержка файлов HEIC/HEIF</string>
     <string name="why_upgrade_batch_renaming">Пакетное переименование файлов</string>
     <string name="why_upgrade_folder_locking">Индивидуальная блокировка папок</string>
@@ -1019,7 +1077,7 @@
     <string name="audio_record_view_title">Audio Record View (звуковая визуализация)</string>
     <string name="sms_mms_title">SMS, MMS (обработка SMS и MMS)</string>
     <string name="apng_title">APNG Android (отображение анимации WebP)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (просмотр PDF)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (просмотр PDF)</string>
     <string name="m3u_parser_title">M3U Parser (обработка файлов списков воспроизведения m3u)</string>
     <string name="android_lame_title">AndroidLame (кодировщик в mp3)</string>
     <!-- Google Play listing -->
